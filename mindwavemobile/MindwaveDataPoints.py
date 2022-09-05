@@ -40,7 +40,8 @@ class MeditationDataPoint(DataPoint):
         self.meditationValue = self._dataValueBytes[0]
 
     def __str__(self):
-        return "Meditation Level: " + str(self.meditationValue)
+        return str(self.meditationValue)
+        # return "Meditation Level: " + str(self.meditationValue)
 
 class BlinkDataPoint(DataPoint):
     def __init__(self, _dataValueBytes):
